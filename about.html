@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Municipality of Lipkovo</title>
+  <script src="https://kit.fontawesome.com/d2127483a7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<section class="sub-header">
+<nav>
+
+    <a href="home.html"><img src="images/logofLip.2.png" alt="logofLipkovo"></a>
+
+    <div class="nav-links" id="navLinks">
+      <i class="fas fa-times" onclick="hidemenu()"></i>
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="tourism.html">TOURISM</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="community.html">COMMUNITY</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+</div>
+<i class="fas fa-bars" onclick="showmenu()"></i>
+</nav>
+   <h1>About Us</h1>
+</section>
+<!---about us cont--->
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <h1>A Truly Specila Municipality</h1>
+      <p>Welcome to Lipkovo! this unique Municipality is one that many are proud to call home. Our passionate residents and elected officials work together to build a bustling community and ensure that its top notch institutions will endure for generations to come.
+
+A flourishing Municipality nestled in natural beauty, there is much to see and do for both residents and visitors alike. Indulge in a delicious meal at one of the local eateries, take a stroll through one of the parks, or enjoy one of the many cultural attractions. There is something for everyone.</p>
+      <a href="home.html" class="red-btn">EXPLORE</a>
+    </div>
+    <img src="images/vaks.jpg" alt="">
+
+  </div>
+
+</section>
+
+
+<!---Footer------>
+<section class="footer">
+  <h4>About Us</h4>
+  <p>This is the unofficial website of Municipality of LIPKOVO</p>
+  <div class="icons">
+  <a target="_blank" href="https://www.facebook.com/komuna.elikoves.3/"><i class="fab fa-facebook"></i></a>
+  <a target="_blank" href="https://www.instagram.com/komunaelikoves/"><i class="fab fa-instagram"></i></a>
+  <a target="_blank" href="https://www.youtube.com/channel/UCZ-3U07qXLJQ1LAltQo0wbQ"><i class="fab fa-youtube"></i></a>
+  </div>
+
+</section>
+<!--javascript for menu-------->
+<script type="text/javascript">
+  var navLinks = document.getElementById("navLinks");
+  function showmenu(){
+    navLinks.style.right="0";
+  }
+  function hidemenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+
+
+</body>
+</html>

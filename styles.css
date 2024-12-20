@@ -1,0 +1,382 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo Narrow', sans-serif
+
+}
+nav{
+
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 150px;
+
+  }
+.nav-links{
+  flex:1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #B0C4DE;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+
+}
+.herobutton {
+  display: inline-block;
+  text-decoration:none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.herobutton:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+  margin: 15px;
+}
+nav .fas{
+  display: none;
+}
+@media (max-width: 700px){
+  .hero-text {
+    font-size: 10px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #B0C4DE;
+    height:600px;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fas{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+}
+/*-------Info--------*/
+.Info{
+  width: 80%;
+  margin:auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1{
+  font-size: 36px;
+  font-weight: 600;
+
+}
+p{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.Info-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  margin: 1%;
+  transition: 0,5s;
+
+}
+h3{
+  text-align:center;
+  font-weight:600;
+  margin: 10px;
+}
+.Info-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media (max-width: 700px) {
+  .row{
+    flex-direction: column;
+  }
+}
+/*---------Villages--------*/
+.villages{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.villages-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.villages-col img{
+  width: 100%;
+  display: block;
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+transition: 0.5s;
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+.row .villages-col img{
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+}
+.row .villages-col:hover img{
+  transform: scale(0.85);
+}
+/*------------footer-------------*/
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons .fab{
+  color: #000000;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+/*------------About Us------------*/
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/pendalikove.4.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #ffff;
+}
+.sub-header h1{
+  margin-top: 20px;
+
+}
+.about-us{
+   width: 80%;
+   margin: auto;
+   padding-top: 80px;
+   padding-bottom: 50px;
+}
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img{
+  width: 100%;
+
+}
+.about-col h1{
+  padding-top: 0;
+}
+.about-col p{
+  padding: 15px 0 25px;
+}
+.red-btn {
+  display: inline-block;
+  text-decoration:none;
+  color: #f44336;
+  border: 1px solid #f44336;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.red-btn:hover{
+  border: 1px solid #ffff;
+  color: #ffff;
+  background: #f44336;
+  transition: 1s;
+  margin: 15px;
+}
+/*------comunity------*/
+.for-us{
+   width: 100%;
+   padding-top: 80px;
+   padding-bottom: 50px;
+   text-align: center;
+}
+.for-col{
+  flex-basis: 100%;
+  padding: 0;
+  text-align: center;
+}
+/*------contact us-------*/
+.location{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe{
+  width: 100%;
+}
+.contact-us{
+  width:80%;
+  margin: auto;
+}
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fas{
+  font-size: 28px;
+  color: #f44336;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col div h5{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+/*-----tourism---*/
+.tourism-con{
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+
+}
+.tour{
+  flex-basis: 100%;
+}
+.tour img{
+  width: 100%;
+
+}
+.tour h2{
+  color: #222;
+  font-weight: 600;
+  margin: 30px 0;
+
+}
+.tourism-con h1{
+     width: 100%;
+     padding-top: 80px;
+     padding-bottom: 50px;
+     text-align: center;
+}
+.tourism-con p{
+  color: #999;
+  padding: 0;
+
+}
+@media(max-width:700px){
+  .tourism-con h1{
+    font-size: 24px;
+  }
+}
+/*----History----*/
+.history-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/fotoevjeterr.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.tourism-con .hist p{
+  padding: 15px;
+  padding-top: 0;
+  font-weight: 600;
+  flex-basis: 100%;
+  padding-left: 80px;
+}
+@media (max-width:700px){
+  .tourism-con .hist p{
+    padding: 0px;
+    margin: 0px;
+
+  }
+}
+.his p{
+  margin-bottom: 15px;
+}

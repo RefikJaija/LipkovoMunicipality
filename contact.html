@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Municipality of Lipkovo</title>
+  <script src="https://kit.fontawesome.com/d2127483a7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<section class="sub-header">
+<nav>
+
+    <a href="home.html"><img src="images/logofLip.2.png" alt="logofLipkovo"></a>
+
+    <div class="nav-links" id="navLinks">
+      <i class="fas fa-times" onclick="hidemenu()"></i>
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="tourism.html">TOURISM</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="community.html">COMMUNITY</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+</div>
+<i class="fas fa-bars" onclick="showmenu()"></i>
+</nav>
+   <h1>Contact Us</h1>
+</section>
+<!---contact us cont--->
+<section class="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189348.3592119808!2d21.63605566640398!3d42.13812825554065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135444ad23f15ed5%3A0x3d2d5f5dd5caeb0d!2sMunicipality%20of%20Lipkovo!5e0!3m2!1sen!2smk!4v1623542106635!5m2!1sen!2smk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+  <div class="row">
+    <div class="contact-col">
+      <div >
+        <i class="fas fa-address-card"></i>
+        <span>
+          <h5>Fshati Likovënr. i postës: 1307</h5>
+        </span>
+
+      </div>
+      <div >
+        <a href="tel:00389(0)31/463-180"><i class="fas fa-phone"></i></a>
+          <span>
+            <h5>00389(0)31/463-180</h5>
+          </span>
+
+        </div>
+        <div >
+          <a href = "mailto: abc@example.com"><i class="fas fa-envelope-square"></i></a>
+            <span>
+              <h5>m_likova@yahoo.com</h5>
+            </span>
+
+          </div>
+
+
+
+    </div>
+    <div class="contact-col">
+
+      <form action="formhandler.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter Email Adress" required>
+        <input type="text" name="subject" placeholder="Enter your subject" required>
+        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="herobutton red-btn">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!---Footer------>
+<section class="footer">
+  <h4>About Us</h4>
+  <p>This is the unofficial website of Municipality of LIPKOVO</p>
+  <div class="icons">
+  <a target="_blank" href="https://www.facebook.com/komuna.elikoves.3/"><i class="fab fa-facebook"></i></a>
+  <a target="_blank" href="https://www.instagram.com/komunaelikoves/"><i class="fab fa-instagram"></i></a>
+  <a target="_blank" href="https://www.youtube.com/channel/UCZ-3U07qXLJQ1LAltQo0wbQ"><i class="fab fa-youtube"></i></a>
+  </div>
+
+</section>
+<!--javascript for menu-------->
+<script type="text/javascript">
+  var navLinks = document.getElementById("navLinks");
+  function showmenu(){
+    navLinks.style.right="0";
+  }
+  function hidemenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+
+
+</body>
+</html>
